@@ -1,10 +1,27 @@
 import React, { Component } from 'react';
+import { NavItems } from './navbar-items'
+import './navbar.css'
 
-class Navbar extends Component {
+export default class Navbar extends Component {
     state = {  }
     render() { 
-        return (<p>navbar here lol</p>);
+        return (
+            <nav className="NavbarItems">
+                <div className="menu-icon">
+                    
+                </div>
+                <ul>
+                    {NavItems.map((item, index) => {
+                        return(
+                            <li key={index}>
+                                <a className={item.className} href={item.link}>
+                                    {item.label}
+                                </a>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </nav>
+        );
     }
 }
- 
-export default Navbar;

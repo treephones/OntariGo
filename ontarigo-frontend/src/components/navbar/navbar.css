@@ -1,0 +1,7 @@
+.NavbarItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: rgb(243, 182, 182);
+}
