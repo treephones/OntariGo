@@ -5,3 +5,27 @@
     font-size: 1.2rem;
     background-color: rgb(243, 182, 182);
 }
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+}
+
+.navlinke:hover {
+    background-color: cadetblue;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 2rem;
+    width: 40vw;
+    list-style: none;
+    text-align: center;
+    justify-content: end;
+    margin-right: 5rem;
+
+}
